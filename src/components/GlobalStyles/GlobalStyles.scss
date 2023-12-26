@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'normalize.css';
+
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  // font-size: 62.5%;
+  font-family: 'Barlow Condensed', sans-serif !important;
+}
+
+body {
+  // font-size: 1.6rem;
+  text-rendering: optimizeSpeed; // Tối ưu hiển thị font nhanh nhất
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.ant-btn {
+  height: auto;
+}
+
+.ant-table {
+  overflow: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 20px !important;
+}
+
+th {
+  background-color: #ecfeff !important;
+}
+
+.ant-btn-primary {
+  @apply bg-primary text-white font-semibold;
+  
+  &:hover {
+    opacity: 0.8;
+    background-color: #1dcbdf !important;
+  }
+}
+
+.box-shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.button-create {
+  font-size: 20px;
+  min-width: 80px;
+}
+
+@layer components {
+  .heading {
+    @apply  leading-normal text-3xl font-bold rounded-xl bg-primary py-1 px-3 mt-5 mb-7 text-white;
+  } 
+  .button-create {
+    @apply mb-5;
+  }
+}

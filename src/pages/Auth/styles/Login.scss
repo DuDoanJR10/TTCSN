@@ -1,0 +1,15 @@
+.Login {
+    .ant-radio-button-wrapper {
+        border-width: 2px;
+        color: #1dcbdf !important;
+        border-color: #1dcbdf !important;
+        &-checked {
+            color: #fff !important;
+            background-color: #1dcbdf !important;
+        }
+
+        &::before {
+            display: none !important;
+        }
+    }
+}
