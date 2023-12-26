@@ -23,7 +23,7 @@ const Register = ({ showModalLogin, handleCancel }) => {
       password: values.password?.trim(),
       address: values.address?.trim(),
       role: "user"
-    };
+    }; 
     dispatch(registerStart());
     try {
       const data = await register(newUser);
