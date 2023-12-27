@@ -22,7 +22,7 @@ const Register = ({ showModalLogin, handleCancel }) => {
       username: values.username?.trim(),
       password: values.password?.trim(),
       address: values.address?.trim(),
-      role: "user"
+      role: "user"   
     }; 
     dispatch(registerStart());
     try {  
