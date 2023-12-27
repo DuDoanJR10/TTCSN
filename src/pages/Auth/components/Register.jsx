@@ -25,13 +25,13 @@ const Register = ({ showModalLogin, handleCancel }) => {
       role: "user"
     }; 
     dispatch(registerStart());
-    try {
+    try {  
       const data = await register(newUser);
       if (data.success) {
         handleCancel();
         form.resetFields();
         dispatch(registerSuccess());
-        showMessage().showSuccess(data.message);
+        showMessage().showSuccess(data.message); 
       } else {
         dispatch(registerFailed());
         showMessage().showError(data.message);
