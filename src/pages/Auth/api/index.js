@@ -2,7 +2,7 @@ import instanceAxios from '../../../utils/instanceAxios';
 
 export const login = async (user) => {
     try {
-        const res = await instanceAxios.post(`${process.env.REACT_APP_URL_API}/v1/auth/login`, user, {
+        const res = await instanceAxios.post(`${process.env.REACT_APP_URL_API}/v1/api/auth/login`, user, {
             withCredentials: true,
             credentials: true,
         });
@@ -14,7 +14,7 @@ export const login = async (user) => {
 
 export const register = async (user) => {
     try {
-        const res = await instanceAxios.post(`${process.env.REACT_APP_URL_API}/v1/auth/register`, user);
+        const res = await instanceAxios.post(`${process.env.REACT_APP_URL_API}/v1/api/auth/register`, user);
         return res.data;
     } catch (error) {
         return error.response.data;
@@ -23,7 +23,7 @@ export const register = async (user) => {
 
 export const logout = async (axiosJWT, accessToken, id) => {
     try {
-        const res = await axiosJWT.post(`${process.env.REACT_APP_URL_API}/v1/auth/logout`, id, {
+        const res = await axiosJWT.post(`${process.env.REACT_APP_URL_API}/v1/api/auth/logout`, id, {
             withCredentials: true,
             credentials: true,
             headers: { token: `Bearer ${accessToken}`},
