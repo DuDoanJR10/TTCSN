@@ -144,7 +144,7 @@ const SidebarComponent = ({ className, admin }) => {
         <div className="h-fit">
           <Link to="/" className="block bg-second">
             <p className="Sidebar__logo border-b-4 border-white bg-second text-third my-0 mx-3 pl-[18px] text-3xl leading-[44px] py-2">
-              Hồng Ngọc
+              Nam Anh
             </p>
           </Link>
           <Menu

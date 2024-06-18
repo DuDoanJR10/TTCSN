@@ -40,7 +40,7 @@ const categoryPersistConfig = {
 const accountPersistConfig = {
     key: 'account',
     storage: storage,
-    blacklist: ['modalAdd', 'modalUpdate']
+    // blacklist: ['modalAdd', 'modalUpdate']
 }
 
 const roomPersistConfig = {
